@@ -50,4 +50,7 @@ public abstract class Recipe {
         return time + " minutes";
     }
     
+    public String toString(){
+        return "hello";
+    }
 }

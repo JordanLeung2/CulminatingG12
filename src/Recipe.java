@@ -7,21 +7,27 @@
  *
  * @author jordan
  */
-public abstract class Recipe {
+public class Recipe {
     
+    private String name;
     private String category;
     private String[] ingredients;
     private String[] steps;
     private double calories;
     private int time;
     
-    public Recipe(String category, String[] ingredients, String[] steps, double calories, int time){
+    public Recipe(String name,String category, String[] ingredients, String[] steps, double calories, int time){
+        this.name = name;
         this.category = category;
         this.ingredients = ingredients;
         this.steps = steps;
         this.calories = calories;
         this.time = time;
 }
+    public String getName(){
+        return name;
+    }
+    
     public String getCategory(){
         return category;
     }
